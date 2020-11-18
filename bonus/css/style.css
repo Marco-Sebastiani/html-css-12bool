@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.row::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.row [class*="col-"]{
+  height: 80px;
+  background-color: #ffeb3b;
+}
+
+.row .black{
+  background-color: black
+}
+
+.row .red{
+  background-color: #e70651
+}
